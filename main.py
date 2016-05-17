@@ -1,5 +1,4 @@
 from graph import *
-import string
 maxVertices = 1000
 
 vertexPrompt = "Enter a positive vertex ID, or 0 if done: "
@@ -89,4 +88,4 @@ print "Starting BFS..."
 parents = bfs(g, 1)
 print parents
 
-print "The shortest path between 1 and 9 is of length " + str(findShortestPath(g, 1, 9, bfs(g,1)))
+print "The shortest path between 1 and 12 is of length " + str(findShortestPath(g, 1, 12, bfs(g,1)))
