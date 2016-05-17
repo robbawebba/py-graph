@@ -160,7 +160,6 @@ def bfs(g, root):
         # process the current vertex curr again if you want
     if g.numVertices == len(g.processed): # if all vertices of graph have been processed
         # We're done with the dfs!
-        print "DONE!"
         # clear some of the global variables to be used in future searches
         g.discovered = {}
         g.processed = {}
