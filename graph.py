@@ -40,9 +40,9 @@ class Graph:
         self.degrees[key] = 0
         return newVertex
 
-    def getVertex(self,n):
-        if n in self.vertList:
-            return self.vertList[n]
+    def getVertex(self,key):
+        if key in self.vertList:
+            return self.vertList[key]
         else:
             return None
 
@@ -83,7 +83,8 @@ class Graph:
     def __iter__(self):
         return iter(self.vertList.values())
 
-def dfs(g, root, parent = {}):
+def dfs(g, root):
+    parent = {}
     successor = 0 # successor vertex for recursion
     g.discovered[root] = True #discovered value of current root to true
     g.time += 1
