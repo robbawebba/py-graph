@@ -1,4 +1,6 @@
 # Py-Graph
+[![Build Status](https://travis-ci.org/robertweber95/py-graph.svg?branch=master)](https://travis-ci.org/robertweber95/py-graph)
+
 python implementation of a graph api and graph algorithms.
 
 Created as a study aid for CISC320: Intro to Algorithms
